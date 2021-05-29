@@ -54,14 +54,14 @@ KoBERT를 활용한 채팅봇 모델: https://github.com/LeeJungA43/buddy_KoBERT
 ![ex_screenshot](./img/buddy_flow-chart.png)
 
 
-###Senario
+### Project Senario
 
 1. 적외선 센서로 사용자의 인기척 감지
 2. 사용자 판단 후 표정 촬영
 3. 필요 소리(사용자의 발화) 분류
 4. 모델을 통해 답변 출력
 
-###Reference
+### Reference
 
 Multi-Speaker-Tacotron: https://github.com/carpedm20/multi-speaker-tacotron-tensorflow
 
