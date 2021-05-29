@@ -12,12 +12,10 @@ Check List
 ----------------------
 [Buddy Model 개발 전]
 - [x] Protortype 영상: 
-- [ ] 
-- [ ] 
-- [ ] 
-
-
-
+- [ ] `Multi-Speaker-Tacotron Data` 전처리
+- [ ] `Multi-Speaker-Tacotron Data` `Deep-Voice` 학습
+- [ ] KoBERT 모델 일반 대화 학습
+- [ ] 가상서버 or 드라이브 만들기
 
 [Buddy Model 개발]
 
