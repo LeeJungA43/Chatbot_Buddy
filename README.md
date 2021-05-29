@@ -34,13 +34,16 @@ Check List
 Buddy Project
 ----------------------
 ###Poroject Repository
-Dev repository: 
-Multi-Speaker Tacotron 모델:
-KoBERT를 활용한 채팅봇 모델: 
+Dev repository: https://github.com/LeeJungA43/Chatbot_Buddy
+Multi-Speaker Tacotron 모델: https://github.com/LeeJungA43/mstt
+KoBERT를 활용한 채팅봇 모델: https://github.com/LeeJungA43/buddy_KoBERT
 
+### 프로젝트의 목적
+기본적으로 현대 청년층의 심리장애 및 우울증 환자 수가 증가하고 있고, 이것이 코로나시대와 겹쳐지면서 '코로나 블루'라는 신조어까지 생기는 상황이다. 이러한 우울증이 병원에 갈 수 없는 한밤중이나 휴일에 심해질 때, 그 곁에서 불안정한 심신을 위로하고 우울감을 조절할 수 있는 조언을 해줄 수 있는 스피커가 있다면 효과적일 것이라 생각했다.
 
+  그래서 생각해낸 것이 바로 딥러닝 기반 음성챗봇이다. AIhub에서 제공하는 '웰니스 대화 스크립트 데이터셋'을 사용하여 챗봇을 학습을 시킨다면 우울함을 겪고 있는 사용자에게 적절한 위로의 대답을 할 수 있을 것이라 생각했다. 그리고 텍스트로 대화하는 것 보다는, 실제 음성으로 대화를 하면 더욱 심신 안정에 효과적일 것이라 생각하여 음성챗봇으로 구현하기로 결정했다.
 
-
+### Project Flow-Chart
 
 
 
