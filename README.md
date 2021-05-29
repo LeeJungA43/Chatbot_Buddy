@@ -11,8 +11,7 @@ Prototype
 Check List
 ----------------------
 [Buddy Model 개발 전]
-- [ ] 
-
+- [x] 
 - [ ] 
 - [ ] 
 - [ ] 
