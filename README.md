@@ -1,5 +1,4 @@
-# 학교다니기힘드시조
-# "딥러닝 기반 심리안정 음성챗봇 Buddy"
+# 딥러닝 기반 심리안정 음성챗봇 "Buddy"
 
 학교다니기힘드시조 유튜브 채널
 ----------------------
@@ -34,7 +33,9 @@ Check List
 
 Buddy Project
 ----------------------
-###Poroject Repository
+
+### Poroject Repository
+
 Dev repository: https://github.com/LeeJungA43/Chatbot_Buddy
 
 Multi-Speaker Tacotron 모델: https://github.com/LeeJungA43/mstt
