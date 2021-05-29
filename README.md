@@ -1,15 +1,12 @@
 # 딥러닝 기반 심리안정 음성챗봇 "Buddy"
 
-학교다니기힘드시조 유튜브 채널
-----------------------
+### 학교다니기힘드시조 유튜브 채널
 Link: 
 
-Prototype
-----------------------
+### Prototype
 학교다니기힘드시조 버디 프로토타입 영상: 
 
-Check List
-----------------------
+### Check List
 [Buddy Model 개발 전]
 > - [x] Protortype 영상: 
 > - [ ] `Multi-Speaker-Tacotron Data` 전처리
