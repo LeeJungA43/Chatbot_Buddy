@@ -61,11 +61,8 @@ KoBERT를 활용한 채팅봇 모델: https://github.com/LeeJungA43/buddy_KoBERT
 ### Reference
 
 >Multi-Speaker-Tacotron: https://github.com/carpedm20/multi-speaker-tacotron-tensorflow
-
 >cognitive-services-speech-sdk: https://github.com/Azure-Samples/cognitive-services-speech-sdk
-
 >azure-sdk-for-python: https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/cognitiveservices/azure-cognitiveservices-vision-face
-
 >WellnessConversation-LanguageModel: https://github.com/nawnoes/WellnessConversation-LanguageModel
 
 
