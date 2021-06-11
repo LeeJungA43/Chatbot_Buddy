@@ -8,7 +8,7 @@ Link:
 
 ### Check List
 [Buddy Model 개발 전]
-> - [x] Protortype : https://colab.research.google.com/drive/1lsNvfFOJMP1bbe8FWg5V194kjx9KUCMX?usp=sharing 
+> - [x] Protortype : https://colab.research.google.com/drive/1lsNvfFOJMP1bbe8FWg5V194kjx9KUCMX?usp=sharing (확인 시 이화인 계정 필요)
 > - [ ] `Multi-Speaker-Tacotron Data` 전처리
 > - [ ] `Multi-Speaker-Tacotron Data` `Deep-Voice` 학습
 > - [ ] KoBERT 모델 일반 대화 학습
