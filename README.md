@@ -4,7 +4,7 @@
 Link: 
 
 ### Prototype
-학교다니기힘드시조 버디 프로토타입 영상: 
+학교다니기힘드시조 버디 시연 영상: [https://youtu.be/TSjSR0o90PY](https://youtu.be/TSjSR0o90PY) 
 
 ### Check List
 [Buddy Model 개발 전]
