@@ -1,7 +1,7 @@
 # 딥러닝 기반 심리안정 음성챗봇 "Buddy"
 
 ### 학교다니기힘드시조 유튜브 채널
-Link: 
+Link: https://www.youtube.com/channel/UCxddhezhExZczcUuW3oXsRw
 
 ### Prototype
 학교다니기힘드시조 버디 시연 영상: [https://youtu.be/TSjSR0o90PY](https://youtu.be/TSjSR0o90PY) 
