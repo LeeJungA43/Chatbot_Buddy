@@ -92,7 +92,7 @@ while True:
             data['question'] = {"question": str(the_question.text)}
 
             # API 사용. params을 전송
-            res = requests.post('http://20.196.217.156:5000/chatbot', json=data)
+            res = requests.post('<API가 실행되는 IP Adress>', json=data)
             response = res.json()
             print(response['response'])
 
