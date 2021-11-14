@@ -17,8 +17,6 @@ CF.Key.set(KEY)
 BASE_URL = 'https://koreacentral.api.cognitive.microsoft.com/face/v1.0/'
 CF.BaseUrl.set(BASE_URL)
 
-camera = cv2.VideoCapture(0)
-
 # STT/TTS 사전 설정. 한국어와 여성의 음성을 선택
 speech_config.speech_synthesis_language = "ko-KR"
 speech_config.speech_synthesis_voice_name = "ko-KR-SunHiNeural"
@@ -27,6 +25,7 @@ count = 0
 break_check = 0
 
 def face_capture():
+    camera = cv2.VideoCapture(0)
     while True:
         ret, image = camera.read()
         happiness, anger, contempt, disgust, fear, sadness =[0, 0, 0, 0, 0, 0]
@@ -47,7 +46,9 @@ def face_capture():
             #사진 삭제
             if os.path.isfile(img_url):
                     os.remove(img_url)
-               
+
+            camera.release()
+            cv2.destroyAllWindows()   
             return happiness, anger, contempt, disgust, fear, sadness
 
 while True:
@@ -73,8 +74,6 @@ while True:
     if happiness < bad_expression:
         # 무슨 일이 있으신가요? 기분이 안좋아보여요. 제가 도울 수 있는게 있으면 말해주세요.
         play_audio("./audio/Opening.wav")
-        camera.release()
-        cv2.destroyAllWindows()
 
     # 마이크 녹음 동작. 음성이 잡힐 때 까지 대기. 잡히면 wav 파일 생성.
     """
