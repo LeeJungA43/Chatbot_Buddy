@@ -1,5 +1,6 @@
 import requests
 import cognitive_face as CF
+import cv2
 from play_audio import play_audio
 import azure.cognitiveservices.speech as speechsdk
 from azure.cognitiveservices.speech import AudioDataStream, SpeechConfig, SpeechSynthesizer, SpeechSynthesisOutputFormat
@@ -9,12 +10,45 @@ from azure.cognitiveservices.speech.audio import AudioOutputConfig
 speech_key, service_region = "1d5adb57698441c4a0ae848fc8c565c7", "koreacentral"
 speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 
+# Face Recogntion
+KEY = "PASTE YOUR KEY"
+CF.Key.set(KEY)
+
+BASE_URL = 'https://koreacentral.api.cognitive.microsoft.com/face/v1.0/'
+CF.BaseUrl.set(BASE_URL)
+
+camera = cv2.VideoCapture(0)
+
 # STT/TTS 사전 설정. 한국어와 여성의 음성을 선택
 speech_config.speech_synthesis_language = "ko-KR"
 speech_config.speech_synthesis_voice_name = "ko-KR-SunHiNeural"
 
 count = 0
 break_check = 0
+
+def face_capture():
+    while True:
+        ret, image = camera.read()
+        happiness, anger, contempt, disgust, fear, sadness =[0, 0, 0, 0, 0, 0]
+        if(int(camera.get(1)) % 60 == 0):
+            print('Saved image ' + str(int(camera.get(1))))
+            cv2.imwrite("emotions/frame.png", image)
+            img_url = './emotions/frame.png'
+            faces = CF.face.detect(img_url, True, False, "age, gender, emotion")
+
+            for i in faces:
+                happiness = i['faceAttributes']['emotion']['happiness']
+                anger = i['faceAttributes']['emotion']['anger']
+                contempt = i['faceAttributes']['emotion']['contempt']
+                disgust = i['faceAttributes']['emotion']['disgust']
+                fear = i['faceAttributes']['emotion']['fear']
+                sadness = i['faceAttributes']['emotion']['sadness']
+
+            #사진 삭제
+            if os.path.isfile(img_url):
+                    os.remove(img_url)
+               
+            return happiness, anger, contempt, disgust, fear, sadness
 
 while True:
     # PIR 센서 반응을 기다림. 그리고 만약 반응이 있으면 if로 넘어감.
@@ -32,14 +66,15 @@ while True:
     """
 
     # Face API 실행
-    """
-    Face API 실행 구문 (def로 face_chapture 함수를 만들어 사용하는 것이 간편)
-    """
 
-    # if anger > 0.5 or contempt > 0.5 or distgust > 0.5 or fear > 0.5 or sadness > 0.5:
-    # 부정적 감정이 50% 이상이라고 나타날 때(아니면 다섯개 합한게 50% 이상이어도 괜찮을듯)
+    happiness, anger, contempt, disgust, fear, sadness = face_capture()
+    bad_expression = anger + contempt + disgust + fear + sadness
+    
+    if happiness < bad_expression:
         # 무슨 일이 있으신가요? 기분이 안좋아보여요. 제가 도울 수 있는게 있으면 말해주세요.
-        #play_audio("./audio/Opening.wav")
+        play_audio("./audio/Opening.wav")
+        camera.release()
+        cv2.destroyAllWindows()
 
     # 마이크 녹음 동작. 음성이 잡힐 때 까지 대기. 잡히면 wav 파일 생성.
     """
@@ -70,6 +105,7 @@ while True:
             play_audio("./audio/end.wav")
             count = 0
             break_check = 1
+            
             break
 
         elif '음악' in the_question.text:  # 음악 재생을 바랄 때
