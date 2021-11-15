@@ -58,7 +58,7 @@ Multi-Speaker-Tacotron: https://lee-jung-ah.tistory.com/1
 
 ### Project Flow-Chart
 
-![ex_screenshot](./img/flow-chart.png)
+![flow chart](https://user-images.githubusercontent.com/71166763/141738959-5dc92f7a-6696-40f0-9993-933294fa39d8.jpg)
 
 
 ### Project Senario
