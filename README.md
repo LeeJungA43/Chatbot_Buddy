@@ -35,7 +35,7 @@ Buddy Project
 
 Dev repository: https://github.com/LeeJungA43/Chatbot_Buddy
 
-Multi-Speaker Tacotron 모델: https://github.com/LeeJungA43/mstt
+~~Multi-Speaker Tacotron 모델: https://github.com/LeeJungA43/mstt
 
 KoBERT를 활용한 채팅봇 모델: https://github.com/LeeJungA43/buddy_KoBERT
 
