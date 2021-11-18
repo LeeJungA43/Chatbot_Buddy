@@ -51,7 +51,7 @@ Multi-Speaker-Tacotron: https://lee-jung-ah.tistory.com/1
 
 ### POSTER
 
-<img src="/img/poster.png" width="800px" title="px(픽셀) 크기 설정" alt="poster"></img><br/>
+<img src="/img/poster.jpg" width="800px" title="px(픽셀) 크기 설정" alt="poster"></img><br/>
 
 ### 프로젝트의 목적
 
