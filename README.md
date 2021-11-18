@@ -77,7 +77,7 @@ Multi-Speaker-Tacotron: https://lee-jung-ah.tistory.com/1
 
 ### Reference
 
->Multi-Speaker-Tacotron: https://github.com/carpedm20/multi-speaker-tacotron-tensorflow
+>~~Multi-Speaker-Tacotron: https://github.com/carpedm20/multi-speaker-tacotron-tensorflow~~
 >
 >cognitive-services-speech-sdk: https://github.com/Azure-Samples/cognitive-services-speech-sdk
 >
