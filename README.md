@@ -49,6 +49,10 @@ STT: https://wanivlog.tistory.com/3
 
 Multi-Speaker-Tacotron: https://lee-jung-ah.tistory.com/1
 
+### POSTER
+
+<img src="/img/poster.png" width="800px" title="px(픽셀) 크기 설정" alt="poster"></img><br/>
+
 ### 프로젝트의 목적
 
 >기본적으로 현대 청년층의 심리장애 및 우울증 환자 수가 증가하고 있고, 이것이 코로나시대와 겹쳐지면서 '코로나 블루'라는 신조어까지 생기는 상황이다. 이러한 우울증이 병원에 갈 수 없는 한밤중이나 휴일에 심해질 때, 그 곁에서 불안정한 심신을 위로하고 우울감을 조절할 수 있는 조언을 해줄 수 있는 스피커가 있다면 효과적일 것이라 생각했다.
