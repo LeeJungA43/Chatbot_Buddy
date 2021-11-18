@@ -5,6 +5,7 @@ Link: https://www.youtube.com/channel/UCxddhezhExZczcUuW3oXsRw
 
 ### Prototype
 학교다니기힘드시조 버디 시연 영상: [https://youtu.be/1pYcX_lvk3s](https://youtu.be/1pYcX_lvk3s) 
+학교다니기힘드시조 버디 포스터 세션: [https://youtu.be/PufsP0f8ERM](https://youtu.be/PufsP0f8ERM)
 
 ### Check List
 [Buddy Model 개발 전]
