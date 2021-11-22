@@ -33,7 +33,7 @@ while True:
                  "state": str(state)}
 
         # API 사용. file을 서버로 전송
-        res = requests.post('http://52.231.8.193:5000/standby', files=files)
+        res = requests.post('<API 주소>', files=files)
         # json dict() 형식으로 return 되어오는 데이터를 받는다.
         data = res.json()
 
@@ -66,7 +66,7 @@ while True:
                  "silence": str(silence)}
 
         # API 사용. file을 서버로 전송
-        res = requests.post('http://52.231.8.193:5000/chatbot', files=files)
+        res = requests.post('<API 주소>', files=files)
         data = res.json()
 
         # str 형식으로 전달받은 wav 데이터(key: response)를 다시 바이너리로 변환
