@@ -25,15 +25,16 @@ PIR 센서 동작부분
 # while 반복문 조건은 PIR에 반응이 있느냐, 없느냐로 수정해야 함
 camera = cv2.VideoCapture(0)
 while True:
-    if (run_check == 0): # 0은 대기중이란 뜻
-        #녹음
-        recode_audio(5)
+    #녹음
+    recode_audio(5)
 
-        #촬영
-        ret, image = camera.read()
-        cv2.imwrite("emotions/frame.png", image)
-        img_url = './emotions/frame.png'
-        
+    #촬영
+    ret, image = camera.read()
+    cv2.imwrite("emotions/frame.png", image)
+    img_url = './emotions/frame.png'
+
+    if (run_check == 0): # 0은 대기중이란 뜻
+
         # 대화가 한 번 종료됐다가 다시 돌아왔을 경우, 상태정보와 침묵정보를 초기화 해야 하므로 여기서 선언
         state = 0.0
         silence = 0
@@ -66,15 +67,6 @@ while True:
         # 버디의 답변 재생
         play_audio('./audio/response.wav')
     else: # run_check = 1 = 대화를 시작했다
-        #녹음
-        recode_audio(5)
-
-        #촬영
-        ret, image = camera.read()
-        cv2.imwrite("emotions/frame.png", image)
-        img_url = './emotions/frame.png'
-
-
         # 파이썬 딕셔너리 형식으로 보낼 file 설정
         files = {"images": open('img_url', 'rb'),
                  "wave": open('./audio/user_voice.wav', 'rb'),
@@ -105,7 +97,6 @@ while True:
 
         if music == 1:
             # 음악을 재생
-            
             n = random.randrange(1, 7)
             play_audio('./music/music'+n+'.wav')
 
