@@ -2,6 +2,7 @@ import base64
 import requests
 from time import sleep
 from play_audio import play_audio
+import random
 """
 필요 import
 """
@@ -86,7 +87,10 @@ while True:
 
         if music == 1:
             # 음악을 재생
-            play_audio('./music/music'+'.wav')
+            print("음악")
+            # 음악을 재생
+            n = random.randrange(1, 7)
+            play_audio('./music/music'+ str(n) +'.wav')
 
         # 침묵이 3분 가량 지속된 것
         # 사용자가 대화하고 싶지 않은 상태라고 판단
