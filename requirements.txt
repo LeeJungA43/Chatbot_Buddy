@@ -3,4 +3,3 @@ cognitive_face
 opencv-python
 pyaudio
 requests
-wave
