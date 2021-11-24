@@ -4,4 +4,4 @@ opencv-python
 pyaudio
 requests
 wave
-cv2
+opencv-python
