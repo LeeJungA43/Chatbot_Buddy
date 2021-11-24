@@ -1,4 +1,3 @@
-@@ -0,0 +1,127 @@
 #This is for PC version
 #Before executing this code, You must install open-cv library first.
 import base64
