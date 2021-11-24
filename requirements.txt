@@ -4,6 +4,5 @@ opencv-python
 pyaudio
 requests
 wave
-
-
-
+cv2
+os
