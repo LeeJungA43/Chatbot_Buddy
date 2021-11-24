@@ -93,7 +93,7 @@ while True:
             print("음악")
             # 음악을 재생
             n = random.randrange(1, 7)
-            play_audio('./music/music'+n+'.wav')
+            play_audio('./music/music'+ str(n) +'.wav')
 
         # 침묵이 3분 가량 지속된 것
         # 사용자가 대화하고 싶지 않은 상태라고 판단
@@ -107,8 +107,7 @@ while True:
         # 침묵으로 빠져나온 것이 아니라, 종료나 음악 키워드로 빠져나온 상태
         # 사용자가 버디 종료를 원한 것이므로 바로 말을 걸면 안되니 일정시간 대기한다
         # 임의로 10분(600초)으로 설정했다.
-
-        sleep(600)
+        break
 
 if os.path.isfile(img_url):
     os.remove(img_url)
