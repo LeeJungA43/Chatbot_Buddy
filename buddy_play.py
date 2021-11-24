@@ -7,8 +7,6 @@ from play_audio import play_audio
 """
 
 run_check = 0
-state = 0.0
-silence = 0
 
 # 첫번째 while 문
 # PIR 부분을 채운다면 그 아래의 두번째 while문 전체를 이 안으로
@@ -26,6 +24,8 @@ while True:
     
     if (run_check == 0): # 0은 대기중이란 뜻
         # 대화가 한 번 종료됐다가 다시 돌아왔을 경우, 상태정보와 침묵정보를 초기화 해야 하므로 여기서 선언
+        state = 0.0
+        silence = 0
 
         # 파이썬 딕셔너리 형식으로 보낼 file 설정
         files = {"images": open('<png 위치 및 파일 이름>', 'rb'),
