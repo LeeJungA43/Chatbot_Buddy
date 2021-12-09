@@ -70,7 +70,7 @@ Raspberry Pi 3B+ 다루기: https://wanivlog.tistory.com/m/7
 ### 📈 Project Flow-Chart
 
 ![flow chart](https://user-images.githubusercontent.com/71166763/141738959-5dc92f7a-6696-40f0-9993-933294fa39d8.jpg)
-
+> *음악은 심리 안정 주제의 프리소스 음악을 사용하였으며 github 내 코드를 실행할 시 music 폴더를 만들어서 실행해야 함.
 
 ### 📝 Project Senario
 
