@@ -32,7 +32,7 @@ Link: https://www.youtube.com/channel/UCxddhezhExZczcUuW3oXsRw
 Buddy Project
 ----------------------
 ### ◼ 제품 설명서
-<a href="./buddy_제품설명서.pdf">해당 링크에서 제품 사용 방법을 확인할 수 있습니다.</a>
+<a href="./manual.pdf">해당 링크에서 제품 사용 방법을 확인할 수 있습니다.</a>
 
 ### 🔎 Poroject Repository
 
