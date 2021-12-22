@@ -11,7 +11,7 @@ Link: https://www.youtube.com/channel/UCxddhezhExZczcUuW3oXsRw
 
 ### ✅ Check List
 [Buddy Model 개발 전]
-> - [x] Protortype : https://colab.research.google.com/drive/1lsNvfFOJMP1bbe8FWg5V194kjx9KUCMX?usp=sharing (확인 시 이화인 계정 필요)
+> - [x] Prototype : https://colab.research.google.com/drive/1lsNvfFOJMP1bbe8FWg5V194kjx9KUCMX?usp=sharing (확인 시 이화인 계정 필요)
 > - [x] KoBERT 모델 일반 대화 학습
 
 [Buddy Model 개발]
